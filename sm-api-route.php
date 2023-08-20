@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name:       SM Api Route
- * Plugin URI:        https://github.com/msulaimanmisri
+ * Plugin URI:        https://github.com/msulaimanmisri/sm-route-api
  * Description:       This plugin will create custom API Endpoint
  * Version:           1.0
  * Author:            Sulaiman Misri
@@ -15,4 +15,4 @@ if (!defined('ABSPATH')) {
     exit();
 }
 
-require 'routes/get-user.php';
+require 'routes/get-posts.php';

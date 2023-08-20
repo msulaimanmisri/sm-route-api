@@ -2,11 +2,9 @@
 
 /**
  * @author MuhamadSulaimanMisri
- * This logic is to register custom route to show a spesific User.
- * Optionally, you can return $user;
  */
 
-function sm_api_route()
+function sm_api_to_fetch_the_posts()
 {
     register_rest_route('/sm-api/v1', 'posts', [
         'methods' => 'GET',
@@ -38,4 +36,4 @@ function list_all_the_published_post()
     return $post_data;
 }
 
-add_action('rest_api_init', 'sm_api_route');
+add_action('rest_api_init', 'sm_api_to_fetch_the_posts');
