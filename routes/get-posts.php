@@ -4,7 +4,7 @@
  * @author MuhamadSulaimanMisri
  */
 
-function sm_api_to_fetch_the_posts()
+function sm_api_to_fetch_the_posts() : Void
 {
     register_rest_route('/sm-api/v1', 'posts', [
         'methods' => 'GET',
@@ -12,7 +12,7 @@ function sm_api_to_fetch_the_posts()
     ]);
 }
 
-function list_all_the_published_post()
+function list_all_the_published_post() : Array
 {
     $args = array(
         'post_type' => 'post',
